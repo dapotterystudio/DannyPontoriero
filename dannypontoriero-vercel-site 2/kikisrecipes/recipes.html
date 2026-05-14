@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archive | KIKISRECIPES</title>
+  <meta
+    name="description"
+    content="Browse the KIKISRECIPES archive by location, type, and tags across recipes, places, and food stories."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-shell">
+      <a class="brand" href="index.html" aria-label="KIKISRECIPES home">
+        <span class="brand-medallion" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <span class="brand-name">KIKISRECIPES</span>
+          <span class="brand-tag">A recipe archive, travel journal, and cultural food guide</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="recipes.html" aria-current="page">Archive</a>
+        <a href="seasonal.html">Journeys</a>
+        <a href="kitchen-notes.html">Places</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero archive-hero">
+      <div class="wrap page-hero-grid">
+        <div>
+          <p class="eyebrow">Database archive</p>
+          <h1>Search across recipes, place discoveries, and personal food stories in one calm, expandable system.</h1>
+        </div>
+        <p class="section-text">
+          Each entry has a title, type, location, tags, media-ready layout, narrative field, and a structured section for ingredients,
+          steps, or travel notes. The archive is designed for scale from day one.
+        </p>
+      </div>
+    </section>
+
+    <section class="section archive-browser">
+      <div class="wrap">
+        <div class="browser-controls browser-controls-rich">
+          <div class="search-field">
+            <label for="archive-search">Search archive</label>
+            <input id="archive-search" type="search" placeholder="Search Palermo, pasta, market, story, trattoria..." autocomplete="off" />
+          </div>
+
+          <div class="filter-group">
+            <p class="filter-label">Type</p>
+            <div class="filter-pills">
+              <button class="filter-pill is-active" type="button" data-filter-group="type" data-filter="all">All</button>
+              <button class="filter-pill" type="button" data-filter-group="type" data-filter="recipe">Recipe</button>
+              <button class="filter-pill" type="button" data-filter-group="type" data-filter="place">Place</button>
+              <button class="filter-pill" type="button" data-filter-group="type" data-filter="story">Story</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <p class="filter-label">Region</p>
+            <div class="filter-pills">
+              <button class="filter-pill is-active" type="button" data-filter-group="region" data-filter="all">Everywhere</button>
+              <button id="sicily" class="filter-pill" type="button" data-filter-group="region" data-filter="sicily">Sicily</button>
+              <button id="palermo" class="filter-pill" type="button" data-filter-group="region" data-filter="palermo">Palermo</button>
+              <button id="rome" class="filter-pill" type="button" data-filter-group="region" data-filter="rome">Rome</button>
+              <button id="puglia" class="filter-pill" type="button" data-filter-group="region" data-filter="puglia">Puglia</button>
+              <button id="lisbon" class="filter-pill" type="button" data-filter-group="region" data-filter="lisbon">Lisbon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="archive-cards" data-archive>
+          <article class="archive-card-item" data-type="recipe" data-region="rome" data-search="slow sunday ragu recipe rome family tomato pasta archive">
+            <p class="entry-type">Recipe</p>
+            <h2><a href="recipe-sunday-ragu.html">Slow Sunday Ragu</a></h2>
+            <p class="entry-location">Rome, Italy</p>
+            <p class="entry-summary">A recipe entry with ingredients, full method, serving notes, and an intimate family context section.</p>
+            <div class="tag-row">
+              <span>family recipe</span>
+              <span>tomato</span>
+              <span>slow food</span>
+            </div>
+          </article>
+
+          <article class="archive-card-item" data-type="place" data-region="palermo sicily" data-search="vucciria supper counter place palermo sicily trattoria octopus wine discovery">
+            <p class="entry-type">स्थान/Place</p>
+            <h2><a href="place-vucciria-supper.html">Vucciria Supper Counter</a></h2>
+            <p class="entry-location">Palermo, Sicily</p>
+            <p class="entry-summary">A place discovery entry with atmosphere, must-orders, timing tips, and neighborhood context.</p>
+            <div class="tag-row">
+              <span>street food</span>
+              <span>night meal</span>
+              <span>palermo</span>
+            </div>
+          </article>
+
+          <article class="archive-card-item" data-type="story" data-region="palermo sicily" data-search="market morning palermo story ballaro lemon chickpea travel journal sicily">
+            <p class="entry-type">Story</p>
+            <h2><a href="story-palermo-market.html">A Market Morning in Palermo</a></h2>
+            <p class="entry-location">Ballaro, Palermo</p>
+            <p class="entry-summary">A travel-based food story tying together noise, heat, chickpea batter, and the reason a recipe made it into the archive.</p>
+            <div class="tag-row">
+              <span>travel diary</span>
+              <span>market</span>
+              <span>sicily</span>
+            </div>
+          </article>
+
+          <article class="archive-card-item" data-type="recipe" data-region="sicily palermo" data-search="panelle recipe sicily palermo chickpea lemon street food">
+            <p class="entry-type">Recipe</p>
+            <h2>Panelle with Lemon Salt</h2>
+            <p class="entry-location">Palermo, Sicily</p>
+            <p class="entry-summary">A street-food recipe concept that can connect directly to a market story and a saved Palermo collection.</p>
+            <div class="tag-row">
+              <span>chickpea</span>
+              <span>street food</span>
+              <span>fried</span>
+            </div>
+          </article>
+
+          <article class="archive-card-item" data-type="place" data-region="lisbon" data-search="azulejo cafe lisbon place tartine sardine wine portugal travel">
+            <p class="entry-type">स्थान/Place</p>
+            <h2>Azulejo Corner Cafe</h2>
+            <p class="entry-location">Lisbon, Portugal</p>
+            <p class="entry-summary">A small tiled cafe entry built for coffee notes, pastry highlights, and neighborhood-specific travel tips.</p>
+            <div class="tag-row">
+              <span>breakfast</span>
+              <span>lisbon</span>
+              <span>pastry</span>
+            </div>
+          </article>
+
+          <article class="archive-card-item" data-type="story" data-region="puglia" data-search="olive harvest puglia story countryside october bread oil memory">
+            <p class="entry-type">Story</p>
+            <h2>October Olive Harvest Notes</h2>
+            <p class="entry-location">Puglia, Italy</p>
+            <p class="entry-summary">A countryside journal entry about harvest rhythms, bitter greens, bread, and the feeling of cooking close to the grove.</p>
+            <div class="tag-row">
+              <span>puglia</span>
+              <span>olive oil</span>
+              <span>memory</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" hidden>No archive entries matched that search. Try another city, ingredient, or entry type.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-title">KIKISRECIPES</p>
+        <p class="footer-copy">A flexible archive structure where every food memory can become an entry with tags, location, and story.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="seasonal.html">Journeys</a>
+        <a href="kitchen-notes.html">Places</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
