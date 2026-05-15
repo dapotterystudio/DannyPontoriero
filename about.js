@@ -1,10 +1,15 @@
-const archiveToggle = document.querySelector(".archive-toggle");
-const archiveList = document.getElementById("archive-list");
+const recordToggles = document.querySelectorAll(".record-toggle");
 
-if (archiveToggle && archiveList) {
-  archiveToggle.addEventListener("click", () => {
-    const isOpen = archiveToggle.getAttribute("aria-expanded") === "true";
-    archiveToggle.setAttribute("aria-expanded", String(!isOpen));
-    archiveList.hidden = isOpen;
+recordToggles.forEach((toggle) => {
+  const listId = toggle.getAttribute("aria-controls");
+  const list = listId ? document.getElementById(listId) : null;
+
+  if (!list) return;
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+    list.hidden = isOpen;
   });
-}
+});

@@ -57,53 +57,67 @@
       </article>
 
       <article class="panel records-panel">
-        <div class="record-table">
+        <div class="record-table collapsible-record">
           <div class="record-row table-head">
-            <h2>Exhibitions</h2>
+            <h2>
+              <button class="record-toggle" type="button" aria-expanded="false" aria-controls="exhibitions-list">
+                <span aria-hidden="true">+</span>
+                <span>Exhibitions</span>
+              </button>
+            </h2>
             <p>Year</p>
           </div>
           <div class="record-row">
-            <h3>Menton showcase</h3>
-            <p>2025</p>
+            <h3>Argilla Frattura, Matteo Mauro Studio, Milan, Italy</h3>
+            <p>Apr 9-16, 2026</p>
           </div>
           <div class="record-row">
-            <h3>Turkey international showcase</h3>
-            <p>2025</p>
+            <h3>Gruppo Cosmo</h3>
+            <p>Jan 22, 2026</p>
           </div>
           <div class="record-row">
-            <h3>Faenza ceramic presentation</h3>
-            <p>2024</p>
+            <h3>Castello Belgioioso</h3>
+            <p>Nov 22, 2025</p>
           </div>
-
-          <p class="subhead">Past Exhibitions</p>
-          <div class="record-row">
-            <h3>Gruppo Cosmo collaboration</h3>
-            <p>2024</p>
-          </div>
-          <div class="record-row">
-            <h3>Castello Belgioioso gallery presentation</h3>
-            <p>2024</p>
-          </div>
-          <div class="record-row">
-            <h3>Placeholder exhibition title</h3>
-            <p>2023</p>
+          <div class="record-list" id="exhibitions-list" hidden>
+            <div class="record-row">
+              <h3>Ahmed Adnan Saygun Art Center</h3>
+              <p>2025</p>
+            </div>
+            <div class="record-row">
+              <h3>University of Colorado Boulder</h3>
+              <p>2022</p>
+            </div>
+            <div class="record-row">
+              <h3>Trash in Italy</h3>
+              <p>2022</p>
+            </div>
           </div>
         </div>
 
-        <button class="archive-toggle" type="button" aria-expanded="false" aria-controls="archive-list">
-          <span aria-hidden="true">+</span>
-          <span class="visually-hidden">Show additional placeholder records</span>
-        </button>
-
-        <div class="archive-list" id="archive-list" hidden>
-          <div class="record-row">
-            <h3>Additional exhibition placeholder</h3>
-            <p>2023</p>
+        <div class="record-table collapsible-record competitions">
+          <div class="record-row table-head">
+            <h2>
+              <button class="record-toggle" type="button" aria-expanded="false" aria-controls="competitions-list">
+                <span aria-hidden="true">+</span>
+                <span>World Competitions</span>
+              </button>
+            </h2>
+            <p>Year</p>
           </div>
           <div class="record-row">
-            <h3>Additional studio presentation placeholder</h3>
-            <p>2022</p>
+            <h3>6e March&eacute; International de la C&eacute;ramique (6th International Ceramics Market)</h3>
+            <p>May 31, 2026</p>
           </div>
+          <div class="record-row">
+            <h3>4th International Menemen Ceramic (Pottery) Festival, Menemen, &#304;zmir, Turkey</h3>
+            <p>Sep 5-7, 2025</p>
+          </div>
+          <div class="record-row">
+            <h3>Argill&agrave; Italy, Faenza, Italy</h3>
+            <p>Aug 30-Sep 1, 2024</p>
+          </div>
+          <div class="record-list" id="competitions-list" hidden></div>
         </div>
 
         <div class="record-table awards">
@@ -112,16 +126,16 @@
             <p></p>
           </div>
           <div class="record-row">
-            <h3>Design award placeholder</h3>
-            <p>2025</p>
-          </div>
-          <div class="record-row">
-            <h3>Open call recognition placeholder</h3>
-            <p>2024</p>
-          </div>
-          <div class="record-row">
-            <h3>Student work recognition placeholder</h3>
+            <h3>The Domus Academy Scholars Award</h3>
             <p>2023</p>
+          </div>
+          <div class="record-row">
+            <h3>Tim Grice Scholars Award, University of Colorado Boulder</h3>
+            <p>2022</p>
+          </div>
+          <div class="record-row">
+            <h3>The Pennington School Ceramics Excellence Award</h3>
+            <p>2017 / 2018</p>
           </div>
         </div>
       </article>
@@ -144,35 +158,6 @@
           <a href="https://www.instagram.com/dapotterystudio">@dapotterystudio</a>
         </p>
       </article>
-
-      <article class="footer-panel press-panel">
-        <p class="section-label">Selected Press</p>
-        <p>
-          DAPOTTERY Studio placeholder press - Ceramic feature placeholder -
-          Milan design note placeholder - Material research placeholder
-        </p>
-      </article>
-
-      <article class="footer-panel workshops-panel">
-        <div class="record-table">
-          <div class="record-row table-head">
-            <h2>Workshops, Lectures, Events</h2>
-            <p></p>
-          </div>
-          <div class="record-row">
-            <h3>Ceramic lesson placeholder</h3>
-            <p>2025</p>
-          </div>
-          <div class="record-row">
-            <h3>Studio workshop placeholder</h3>
-            <p>2024</p>
-          </div>
-          <div class="record-row">
-            <h3>Lecture placeholder</h3>
-            <p>2023</p>
-          </div>
-        </div>
-      </article>
     </footer>
 
     <div class="page-meta" aria-label="Page metadata">
@@ -180,7 +165,6 @@
       <a href="index.html">Home</a>
     </div>
   </main>
-
   <script src="about.js"></script>
 </body>
 </html>
